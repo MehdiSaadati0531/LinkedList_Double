@@ -77,7 +77,7 @@ namespace LinkedList_Double
             }
         }
 
-        public void AddMiddle(int valIndex, int val) 
+         public void AddMiddle(int valIndex, int val)
         {
             if (IsNull())
             {
@@ -90,31 +90,29 @@ namespace LinkedList_Double
                 while (find.next != null)
                 {
                     find = find.next;
-                    if (find.value == valIndex) 
+                    if (find.value == valIndex)
                     {
                         break;
                     }
+                }
+                if (find.value != valIndex)
+                {
+                    Console.WriteLine("adad find nashod");
+                    return;
                 }
                 newnode.value = val;
 
                 newnode.next = find.next;
                 find.next = newnode;
                 newnode.prev = find;
-                newnode.next.prev = newnode;
-            }
-        }
-
-        public void DeleteFirst()
-        {
-            if (IsNull())
-            {
-                Console.WriteLine("Empty !!!");
-            }
-            else
-            {
-                Node node = head.next;
-                head = null;
-                head = node;
+                if (newnode.next == null)
+                {
+                    return;
+                }
+                else
+                {
+                    newnode.next.prev = newnode;
+                }
             }
         }
 
