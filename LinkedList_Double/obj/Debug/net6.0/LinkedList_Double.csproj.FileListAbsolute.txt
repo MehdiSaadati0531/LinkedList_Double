@@ -1,0 +1,15 @@
+C:\Users\Mahdi\Desktop\LinkedList_Double\LinkedList_Double\bin\Debug\net6.0\LinkedList_Double.exe
+C:\Users\Mahdi\Desktop\LinkedList_Double\LinkedList_Double\bin\Debug\net6.0\LinkedList_Double.deps.json
+C:\Users\Mahdi\Desktop\LinkedList_Double\LinkedList_Double\bin\Debug\net6.0\LinkedList_Double.runtimeconfig.json
+C:\Users\Mahdi\Desktop\LinkedList_Double\LinkedList_Double\bin\Debug\net6.0\LinkedList_Double.dll
+C:\Users\Mahdi\Desktop\LinkedList_Double\LinkedList_Double\bin\Debug\net6.0\ref\LinkedList_Double.dll
+C:\Users\Mahdi\Desktop\LinkedList_Double\LinkedList_Double\bin\Debug\net6.0\LinkedList_Double.pdb
+C:\Users\Mahdi\Desktop\LinkedList_Double\LinkedList_Double\obj\Debug\net6.0\LinkedList_Double.csproj.AssemblyReference.cache
+C:\Users\Mahdi\Desktop\LinkedList_Double\LinkedList_Double\obj\Debug\net6.0\LinkedList_Double.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mahdi\Desktop\LinkedList_Double\LinkedList_Double\obj\Debug\net6.0\LinkedList_Double.AssemblyInfoInputs.cache
+C:\Users\Mahdi\Desktop\LinkedList_Double\LinkedList_Double\obj\Debug\net6.0\LinkedList_Double.AssemblyInfo.cs
+C:\Users\Mahdi\Desktop\LinkedList_Double\LinkedList_Double\obj\Debug\net6.0\LinkedList_Double.csproj.CoreCompileInputs.cache
+C:\Users\Mahdi\Desktop\LinkedList_Double\LinkedList_Double\obj\Debug\net6.0\LinkedList_Double.dll
+C:\Users\Mahdi\Desktop\LinkedList_Double\LinkedList_Double\obj\Debug\net6.0\ref\LinkedList_Double.dll
+C:\Users\Mahdi\Desktop\LinkedList_Double\LinkedList_Double\obj\Debug\net6.0\LinkedList_Double.pdb
+C:\Users\Mahdi\Desktop\LinkedList_Double\LinkedList_Double\obj\Debug\net6.0\LinkedList_Double.genruntimeconfig.cache
