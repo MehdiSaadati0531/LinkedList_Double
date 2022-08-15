@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,7 +11,7 @@ namespace LinkedList_Double
     {
         public int value;
         public Node next;
-        public Node priv;
+        public Node prev;
     }
 
 
@@ -38,15 +38,15 @@ namespace LinkedList_Double
                 head = firstAdd;
                 firstAdd.value = val;
                 firstAdd.next = null;
-                firstAdd.priv = null;
+                firstAdd.prev = null;
             }
             else
             {
                 Node newnode = new Node();
                 newnode.value = val;
                 newnode.next = head;
-                newnode.priv = null;
-                head.priv = newnode;
+                newnode.prev = null;
+                head.prev = newnode;
                 head.next = null;
                 head = newnode;
             }
@@ -60,20 +60,47 @@ namespace LinkedList_Double
                 head = firstAdd;
                 firstAdd.value = val;
                 firstAdd.next = null;
-                firstAdd.priv = null;
+                firstAdd.prev = null;
             }
             else
             {
                 Node newnode = new Node();
                 Node find = head;
-                while (head.next != null)
+                while (find.next != null)
                 {
                     find = find.next;
                 }
                 newnode.value = val;
-                newnode.priv = find;
+                newnode.prev = find;
                 find.next = newnode;
                 newnode.next = null;
+            }
+        }
+
+        public void AddMiddle(int valIndex, int val) 
+        {
+            if (IsNull())
+            {
+                Console.WriteLine("linked list Empty!!!");
+            }
+            else
+            {
+                Node newnode = new Node();
+                Node find = head;
+                while (find.next != null)
+                {
+                    find = find.next;
+                    if (find.value == valIndex) 
+                    {
+                        break;
+                    }
+                }
+                newnode.value = val;
+
+                newnode.next = find.next;
+                find.next = newnode;
+                newnode.prev = find;
+                newnode.next.prev = newnode;
             }
         }
 
@@ -100,27 +127,27 @@ namespace LinkedList_Double
             else
             {
                 Node lastItem = head;
-                while (head.next != null)
+                while (lastItem.next != null)
                 {
                     lastItem = lastItem.next;
                 }
-                if (lastItem.priv == null)
+                if (lastItem.prev == null)
                 {
                     head = null;
                 }
                 else
                 {
-                lastItem.priv.next = null;
+                lastItem.prev.next = null;
                 }
             }
         }
 
         public void Print() 
         {
-            if (IsNull())
+            if (!IsNull())
             {
                 Node temp = head;
-                while (temp == null)
+                while (temp != null)
                 {
                     Console.WriteLine(temp.value);
                     temp = temp.next;
@@ -135,3 +162,4 @@ namespace LinkedList_Double
 
 
 }
+
